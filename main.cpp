@@ -20,10 +20,6 @@ struct node{
     node(std::string state, node* prevState) : state(state), prevState(prevState){
     }
 
-    // bool operator< (const node& compared) const{
-    //     return priority < compared.priority;
-    // }
-
     bool operator== (const node& compared) const{
         return state == compared.state;
     }
